@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio David C</title>
+    <meta name="description" content="Portafolio de David Castaño. Animador, editor y compositor de imagen digital.">
+    <meta name="keywords" content="portafolio, animación, video, realizador, David, Castaño, Luján, Medellín, Colombia">
+    <link rel="icon" type="image/jpg" href="./imagenes/favicon.png"/>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section id="plantilla">
+        <header>
+            <div class="header_titulo">
+                <h1>COTIZADOR</h1>
+                <p class="header_subtitulo">de videos de animación</p>
+            </div>
+        </header>
+
+        <div class="header_navegacion">
+            <nav>
+                <ul>
+                    <li><a href="index.html">por David Castaño Luján</a></li>
+                    <!-- <li><a href="./paginas/shortfilms.html">Shortfilms</a></li>
+                    <li><a href="./paginas/video.html">Video</a></li>
+                    <li><a href="./paginas/animacion.html">Animación</a></li>
+                    <li><a href="./paginas/contacto.html">Contacto</a></li> -->
+                </ul>
+            </nav>
+        </div>
+        
+        
+
+        <main>
+            
+            <div class="contenedor_general">
+                
+
+                    
+                        <br>
+                        <h2>¡Hola!</h2>
+                        <br>
+                        <div class="contenedores_size_small">
+                        <p>Con este cotizador de videos de animación, podrás ingresar las características de tu video animado y así saber su precio.</p>
+                        </div>
+                        <br>
+                        
+                    
+
+                    <!-- PERSONAJES -->
+                    
+                        <form action="" id="formularioPersonajes">
+
+                            <div class="linea"></div>
+                            <br>
+                            <h2>Personajes</h2>
+                            <br>
+                            <h3>Empecemos con los personajes</h3>
+                            <br>
+                            <div>
+                                <label for="">Nombre</label>
+                                <input type="text" name="nombre" id="nombre">
+                            </div>
+                        
+                            <br>
+                            <div>
+                                <label for="">¿Tiene forma antropomórfica?</label>
+                                <select name="formaAntropomorfica" id="formaAntropomorfica">
+                                    <option value="" active >Selecciona una opción</option>
+                                    <option value="0">No</option>
+                                    <option value="10">Sí</option>    
+                                </select>
+                            </div>
+                            <br>
+                                <div>
+                                    <label for="">¿Tiene extremidades?</label>
+                                    <select name="extremidades" id="extremidades">
+                                        <option value="" active >Selecciona una opción</option>
+                                        <option value="0">No</option>
+                                        <option value="10">Sí</option>
+                                        
+                                    </select>
+                                </div>
+                            <br>
+                                <div>
+                                    <label for="">¿Tiene pelo largo?</label>
+                                    <select name="peloLargo" id="peloLargo">
+                                        <option value="" active >Selecciona una opción</option>
+                                        <option value="0">No</option>
+                                        <option value="10">Sí</option>
+                                        
+                                    </select>
+                                </div>
+                            <br>
+                                <div>
+                                    <label for="">¿Tiene expresiones complejas?</label>
+                                    <select name="expresionesComplejas" id=expresionesComplejas>
+                                        <option value="" active >Selecciona una opción</option>
+                                        <option value="0">No</option>
+                                        <option value="10">Sí</option>
+                                        
+                                    </select>
+                                </div>
+                            <br>
+
+                            <div class="btn-centrado">
+                            <button id="botonPersonajes" type="button" onclick="crearPersonaje()">Añadir personaje</button>
+                            </div>
+
+                            <br>
+                            <br>
+                            <p class="pSmall">Puedes añadir los personajes que quieras.</p>
+
+                            <div id="espacioPersonajes"> </div>
+                            <div class="linea"></div>
+
+                        </form>
+                        
+                    
+
+                    <!-- ESCENARIOS -->
+
+                    
+                        <form action="">
+                            <br>
+                            <br>
+                            <h2>Escenarios</h2>
+                            <br>
+                            <h3>Ahora definamos los escenarios</h3>
+                            <br>
+
+                            <br>
+                                <div>
+                                    <label for="">¿Qué tipo de escenarios tiene?</label>
+                                    <select name="tipoEscenarios" id="tipoEscenarios">
+                                        <option value="" active >Selecciona una opción</option>
+                                        <option value="75">Sencillos</option>
+                                        <option value="150">Complejos</option>
+                                    </select>
+                                </div>
+                            <br>
+                                <div>
+                                    <label for="">¿Cuantos escenarios tiene?</label>
+                                    <input type="number" name="cantidadEscenarios" min="1" id="cantidadEscenarios">
+                                </div>
+                            <br>
+                            
+                            <div id="espacioEscenariosAlerta"> </div>
+                            <div class="btn-centrado">
+                            <button type="button" id="botonEscenarios" onclick="crearEscenarios()">Añadir escenarios</button>
+                            </div>
+
+                            <div id="espacioEscenarios"> </div>
+                            <div class="linea"></div>
+                        </form>
+                    
+
+                    <!-- ESTILO DE ANIMACIÓN -->
+                    
+                        <form action="">
+
+                            <br>
+                            <br>
+                            <h2>Estilo de animación</h2>
+
+                            <br>
+                            <h3>Y para terminar, el estilo de animación.</h3>
+                            <br>
+                            <br>
+                                <div>
+                                    <label for="">¿Qué estilo de animación?</label>
+                                    <select name="tipoAnimacion" id="tipoAnimacion">
+                                        <option value="" active >Selecciona una opción</option>
+                                        <option value="900">Tradicional</option>
+                                        <option value="300">CutOut</option>
+                                    </select>
+                                </div>
+                            <br>
+                                <div>
+                                    <label for="">¿Cuantos minutos dura tu video?</label>
+                                    <input type="number" name="cantidadMinutos" min="1" id="cantidadMinutos">
+                                </div>
+                            <br>
+                            <div id="espacioEstiloAlerta"> </div>
+                            <div class="btn-centrado">
+                            <button type="button" id="botonMinutos" onclick="calcularMinutos()">Añadir minutos</button>
+                            </div>
+
+                            <div id="espacioMinutos"> </div>
+                            <div class="linea"></div>
+                        </form>
+
+                    
+                        <br><br>
+                        <h3>¿Ya ingresaste todos los datos?</h3>
+                        <h3>Haz clic en cotizar.</h3>
+
+                        <br><br>
+                        <button type="button" class="formulario_boton" id="botonCotizar" onclick="cotizar()">Cotizar</button>
+                        <br>
+                        <div id="espacioCotizacionFinal"> </div>
+                        <br>
+                        <br>
+                        <p class="pMedium">Para ver tu cotización en otras divisas, presiona este botón</p>
+                        <br>
+                        <button type="button" disabled="true" id="botonDivisas" onclick="obtenerDatosFixer()">Otras divisas</button>
+                        <div id="espacioOtrasDivisas"></div>
+
+
+                        <br>
+                        <br>
+                        <p class="pMedium">¿Ya habías hecho una cotización?</p>
+                        <p class="pMedium">Puedes presionar este botón para saber el valor de la última cotización.</p>   
+                        <br>
+                        <button type="button" id="botonCotizar" onclick="recuperarCotizacion()">Recuperar Cotización Anterior</button>
+                        <div id="espacioCotizacionRecuperada"> </div>
+                        <br>
+                        <br>
+                </div>
+            </div>    
+        </main>
+
+
+        <footer class="footer_index">
+            <div class="footer_completo_display">
+                <div class="padreFlex">
+                    <div class="marginLados--25px">
+                        <div class="footer--inline marginRight--15px">
+                            <p class="textoBold footer--inline">SÍGUEME</p>
+                        </div>
+                        <div class="footer--inline">
+                            <a href="https://www.instagram.com/davidcaslu/" target="_blank"><img src="./imagenes/instagram.png" class="filtroInvertir" alt="ícono instagram"></a>
+                            <a href="https://twitter.com/davidcaslu" target="_blank"><img src="./imagenes/twitter.png" class="filtroInvertir" alt="ícono twitter"></a>
+                            <a href="https://www.behance.net/davidcaslu" target="_blank"><img src="./imagenes/behance.png" class="filtroInvertir" alt="ícono behance"></a>
+                        </div>
+                    </div>
+                    
+                    <div class="marginLados--25px subpadreFlex">
+                        <div>
+                            <p class="textoBold footer--inline marginRight--15px">ESCRÍBEME</p>
+                        </div>
+                        <div>
+                            <a href="mailto:davidcaslu@gmail.com" target="_blank" class="enlaceBlancoSinSubrayar marginTopBottom--3px subpadreFlex" ><img src="./imagenes/mail.png" class="filtroInvertir" alt="ícono e-mail">
+                                <span class="marginLeft--10px enlaceBlanco_footer">davidcaslu@gmail.com</span> 
+                            </a>
+                            <a href="https://api.whatsapp.com/send?phone=573012453184" class="enlaceBlancoSinSubrayar marginTopBottom--3px" target="_blank"><img src="./imagenes/whatsapp.png" class="filtroInvertir" alt="ícono Whatsapp">
+                                <span class="marginLeft--10px enlaceBlanco_footer">+57 301 245 31 84</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_mobile_display footer_scale">
+                <div class="footer_flex_mobile">
+
+                        <div class="footer--inline marginRight--15px">
+                            <p class="textoBold footer--inline">HABLEMOS</p>
+                        </div>
+
+                        <div class="footer--inline">
+                            <a href="https://www.instagram.com/davidcaslu/" target="_blank"><img src="./imagenes/instagram.png" class="filtroInvertir marginLeft--5px" alt="ícono instagram"></a>
+                            <a href="https://twitter.com/davidcaslu" target="_blank"><img src="./imagenes/twitter.png" class="filtroInvertir marginLeft--5px" alt="ícono twitter"></a>
+                            <a href="https://www.behance.net/davidcaslu" target="_blank"><img src="./imagenes/behance.png" class="filtroInvertir marginLeft--5px" alt="ícono behance"></a>
+                            <a href="mailto:davidcaslu@gmail.com" target="_blank"><img src="./imagenes/mail.png" class="filtroInvertir marginLeft--5px" alt="ícono e-mail">
+                            <a href="https://api.whatsapp.com/send?phone=573012453184" target="_blank"><img src="./imagenes/whatsapp.png" class="filtroInvertir marginLeft--5px" alt="ícono Whatsapp">
+                        </div>
+
+                </div>
+            </div>
+
+
+
+
+        </footer>
+        
+    </section>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="./scripts/main.js"></script>
+</body>
+</html>
